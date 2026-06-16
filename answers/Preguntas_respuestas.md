@@ -6,23 +6,23 @@ Se entrenó un modelo MLP para clasificación multiclase de lesiones dermatológ
 
 * test fijo excluido durante la comparación de modelos;
 * validación cruzada estratificada de 5 folds sobre `trainval`;
-* imágenes redimensionadas a 64x64;
+* imágenes redimensionadas a `64 × 64`;
 * 9 clases;
 * métricas principales: accuracy, macro-F1 y balanced accuracy.
 
 Resumen de resultados:
 
-| Experimento                         | Accuracy media | Macro-F1 medio | Balanced accuracy medio |
-| ----------------------------------- | -------------: | -------------: | ----------------------: |
-| MLP_3_dropout_batchnorm_weightdecay |          0.618 |          0.603 |                   0.618 |
-| MLP_2_dropout_batchnorm             |          0.607 |          0.597 |                   0.609 |
-| MLP_0_baseline                      |          0.600 |          0.597 |                   0.599 |
-| MLP_8_early_stopping                |          0.572 |          0.561 |                   0.577 |
-| MLP_5_xavier_initialization         |          0.570 |          0.555 |                   0.570 |
-| MLP_7_uniform_initialization        |          0.565 |          0.545 |                   0.564 |
-| MLP_4_data_augmentation             |          0.557 |          0.542 |                   0.556 |
-| MLP_6_he_initialization             |          0.555 |          0.534 |                   0.561 |
-| MLP_1_dropout                       |          0.495 |          0.481 |                   0.498 |
+| Experimento                           | Accuracy media | Macro-F1 medio | Balanced accuracy medio |
+| ------------------------------------- | -------------: | -------------: | ----------------------: |
+| `MLP_3_dropout_batchnorm_weightdecay` |          0.618 |          0.603 |                   0.618 |
+| `MLP_2_dropout_batchnorm`             |          0.607 |          0.597 |                   0.609 |
+| `MLP_0_baseline`                      |          0.600 |          0.597 |                   0.599 |
+| `MLP_8_early_stopping`                |          0.572 |          0.561 |                   0.577 |
+| `MLP_5_xavier_initialization`         |          0.570 |          0.555 |                   0.570 |
+| `MLP_7_uniform_initialization`        |          0.565 |          0.545 |                   0.564 |
+| `MLP_4_data_augmentation`             |          0.557 |          0.542 |                   0.556 |
+| `MLP_6_he_initialization`             |          0.555 |          0.534 |                   0.561 |
+| `MLP_1_dropout`                       |          0.495 |          0.481 |                   0.498 |
 
 El mejor resultado de validación cruzada fue obtenido por `MLP_3_dropout_batchnorm_weightdecay`, que combinó Dropout, Batch Normalization y Weight Decay. La mejora respecto del baseline fue moderada, lo cual es razonable porque una MLP no aprovecha de manera explícita la estructura espacial local de las imágenes.
 
@@ -32,11 +32,9 @@ El mejor resultado de validación cruzada fue obtenido por `MLP_3_dropout_batchn
 
 ## ¿Por qué es necesario redimensionar las imágenes a un tamaño fijo para una MLP?
 
-Porque una MLP recibe un vector de entrada de dimensión fija. En este caso, cada imagen RGB de 64x64 se aplana como un vector de:
+Porque una MLP recibe un vector de entrada de dimensión fija. En este caso, cada imagen RGB de `64 × 64` se aplana como un vector de:
 
-[
-64 \times 64 \times 3 = 12288
-]
+`64 × 64 × 3 = 12288`
 
 features. Si las imágenes tuvieran tamaños distintos, la primera capa lineal no podría tener un número fijo de pesos.
 
@@ -50,9 +48,7 @@ En este trabajo, para la implementación MLP se usaron transformaciones equivale
 
 `Normalize()` reescala los valores de los canales de la imagen usando una media y un desvío estándar. La forma general es:
 
-[
-x_{norm} = \frac{x - \mu}{\sigma}
-]
+`x_norm = (x - media) / desvio`
 
 Esto ayuda a que las entradas tengan una escala más estable, lo que mejora la optimización y evita que algunos canales dominen simplemente por tener valores numéricos más grandes.
 
@@ -60,11 +56,9 @@ Esto ayuda a que las entradas tengan una escala más estable, lo que mejora la o
 
 Porque PyTorch entrena usando tensores, no imágenes en formato `PIL` o `numpy`. `ToTensorV2()` convierte la imagen al formato esperado por PyTorch, usualmente con dimensiones:
 
-[
-C \times H \times W
-]
+`canales × alto × ancho`
 
-es decir, canales primero. En este trabajo, cuando se usó `torchvision.transforms`, el equivalente fue `transforms.ToTensor()`.
+Es decir, canales primero. En este trabajo, cuando se usó `torchvision.transforms`, el equivalente fue `transforms.ToTensor()`.
 
 ---
 
@@ -80,21 +74,15 @@ Su limitación central es que aplana la imagen y pierde la estructura espacial. 
 
 Convierte una imagen con forma:
 
-[
-C \times H \times W
-]
+`canales × alto × ancho`
 
-en un vector de una sola dimensión. Por ejemplo, una imagen RGB de 64x64 pasa de:
+en un vector de una sola dimensión. Por ejemplo, una imagen RGB de `64 × 64` pasa de:
 
-[
-3 \times 64 \times 64
-]
+`3 × 64 × 64`
 
 a:
 
-[
-12288
-]
+`12288`
 
 valores de entrada para la primera capa lineal.
 
@@ -106,19 +94,15 @@ Se usó `ReLU`. Es una función estándar en redes profundas porque es simple, r
 
 ## ¿Qué parámetro del modelo deberíamos cambiar si aumentamos el tamaño de entrada de la imagen?
 
-Habría que cambiar la dimensión de entrada de la primera capa lineal. Si se pasa de 64x64 a 128x128, el número de features cambia de:
+Habría que cambiar la dimensión de entrada de la primera capa lineal. Si se pasa de `64 × 64` a `128 × 128`, el número de features cambia de:
 
-[
-64 \times 64 \times 3 = 12288
-]
+`64 × 64 × 3 = 12288`
 
 a:
 
-[
-128 \times 128 \times 3 = 49152
-]
+`128 × 128 × 3 = 49152`
 
-Por lo tanto, la primera `Linear` debe aceptar ese nuevo tamaño.
+Por lo tanto, la primera capa `Linear` debe aceptar ese nuevo tamaño.
 
 ---
 
@@ -221,11 +205,9 @@ El modelo puede sobreajustar fácilmente. Puede memorizar ejemplos de entrenamie
 
 ## ¿Cómo podríamos adaptar este pipeline para imágenes en escala de grises?
 
-Habría que cargar las imágenes con un solo canal y ajustar la dimensión de entrada. Para una imagen grayscale de 64x64, la entrada sería:
+Habría que cargar las imágenes con un solo canal y ajustar la dimensión de entrada. Para una imagen grayscale de `64 × 64`, la entrada sería:
 
-[
-64 \times 64 \times 1 = 4096
-]
+`64 × 64 × 1 = 4096`
 
 También habría que cambiar la normalización para usar una sola media y un solo desvío estándar.
 
@@ -293,11 +275,7 @@ BatchNorm compensó fuertemente la caída producida por Dropout y mejoró inclus
 
 ### 3. Aplicar Weight Decay
 
-Se evaluó `MLP_3_dropout_batchnorm_weightdecay`, usando:
-
-```python
-weight_decay = 1e-4
-```
+Se evaluó `MLP_3_dropout_batchnorm_weightdecay`, usando `weight_decay = 1e-4`.
 
 Resultado:
 
@@ -401,11 +379,11 @@ Además, los bias se inicializaron en cero.
 
 Se probaron:
 
-| Experimento                  | Inicialización | Accuracy media |
-| ---------------------------- | -------------- | -------------: |
-| MLP_5_xavier_initialization  | Xavier         |          0.570 |
-| MLP_6_he_initialization      | He/Kaiming     |          0.555 |
-| MLP_7_uniform_initialization | Uniforme       |          0.565 |
+| Experimento                    | Inicialización | Accuracy media |
+| ------------------------------ | -------------- | -------------: |
+| `MLP_5_xavier_initialization`  | Xavier         |          0.570 |
+| `MLP_6_he_initialization`      | He/Kaiming     |          0.555 |
+| `MLP_7_uniform_initialization` | Uniforme       |          0.565 |
 
 Ninguna inicialización manual superó a `MLP_3_dropout_batchnorm_weightdecay`.
 
