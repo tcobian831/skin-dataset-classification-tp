@@ -1,0 +1,19 @@
+{
+    "experiment": "MLP_5_xavier_initialization",
+    "image_size": 64,
+    "batch_size": 32,
+    "epochs": 20,
+    "lr": 0.001,
+    "dropout": 0.5,
+    "batch_norm": true,
+    "weight_decay": 0.0001,
+    "augmentation": "medium",
+    "initialization": "xavier",
+    "early_stopping": false,
+    "val_accuracy_mean": 0.5704739704739705,
+    "val_accuracy_std": 0.021883299581121708,
+    "val_macro_f1_mean": 0.5553981218156366,
+    "val_macro_f1_std": 0.030088561816478707,
+    "val_balanced_accuracy_mean": 0.569845448668978,
+    "val_balanced_accuracy_std": 0.024048725352265883
+}

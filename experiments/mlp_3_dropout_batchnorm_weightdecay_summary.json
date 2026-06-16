@@ -1,0 +1,19 @@
+{
+    "experiment": "MLP_3_dropout_batchnorm_weightdecay",
+    "image_size": 64,
+    "batch_size": 32,
+    "epochs": 20,
+    "lr": 0.001,
+    "dropout": 0.5,
+    "batch_norm": true,
+    "weight_decay": 0.0001,
+    "augmentation": "minimal",
+    "initialization": "default",
+    "early_stopping": false,
+    "val_accuracy_mean": 0.6178418803418804,
+    "val_accuracy_std": 0.025899040466231302,
+    "val_macro_f1_mean": 0.6027222083028042,
+    "val_macro_f1_std": 0.04913569881259309,
+    "val_balanced_accuracy_mean": 0.6183844913256679,
+    "val_balanced_accuracy_std": 0.03506432805405961
+}

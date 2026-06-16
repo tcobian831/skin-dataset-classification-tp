@@ -1,0 +1,6 @@
+experiment,fold,best_epoch,image_size,batch_size,epochs,lr,dropout,batch_norm,weight_decay,augmentation,initialization,early_stopping,val_loss,val_accuracy,val_macro_f1,val_balanced_accuracy
+MLP_3_dropout_batchnorm_weightdecay,0,8,64,32,20,0.001,0.5,True,0.0001,minimal,default,False,1.2411441802978516,0.5902777777777778,0.5325834879406308,0.5709617180205415
+MLP_3_dropout_batchnorm_weightdecay,1,12,64,32,20,0.001,0.5,True,0.0001,minimal,default,False,1.103807356622484,0.6527777777777778,0.6632545599599636,0.6618708089296326
+MLP_3_dropout_batchnorm_weightdecay,2,16,64,32,20,0.001,0.5,True,0.0001,minimal,default,False,1.050221048034988,0.5944055944055944,0.5834852423087717,0.5970121381886088
+MLP_3_dropout_batchnorm_weightdecay,3,16,64,32,20,0.001,0.5,True,0.0001,minimal,default,False,1.0271989623983424,0.6223776223776224,0.6051515434962768,0.6303304538598657
+MLP_3_dropout_batchnorm_weightdecay,4,12,64,32,20,0.001,0.5,True,0.0001,minimal,default,False,1.1556355127921472,0.6293706293706294,0.6291362078083784,0.6317473376296906

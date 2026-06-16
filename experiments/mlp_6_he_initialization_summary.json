@@ -1,0 +1,19 @@
+{
+    "experiment": "MLP_6_he_initialization",
+    "image_size": 64,
+    "batch_size": 32,
+    "epochs": 20,
+    "lr": 0.001,
+    "dropout": 0.5,
+    "batch_norm": true,
+    "weight_decay": 0.0001,
+    "augmentation": "medium",
+    "initialization": "he",
+    "early_stopping": false,
+    "val_accuracy_mean": 0.5550699300699301,
+    "val_accuracy_std": 0.023796515968215005,
+    "val_macro_f1_mean": 0.5341187771155237,
+    "val_macro_f1_std": 0.029894720157433628,
+    "val_balanced_accuracy_mean": 0.5605674064497594,
+    "val_balanced_accuracy_std": 0.023396383687750974
+}

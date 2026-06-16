@@ -1,0 +1,19 @@
+{
+    "experiment": "MLP_8_early_stopping",
+    "image_size": 64,
+    "batch_size": 32,
+    "epochs": 30,
+    "lr": 0.001,
+    "dropout": 0.5,
+    "batch_norm": true,
+    "weight_decay": 0.0001,
+    "augmentation": "medium",
+    "initialization": "he",
+    "early_stopping": true,
+    "val_accuracy_mean": 0.5718822843822844,
+    "val_accuracy_std": 0.03997606937176238,
+    "val_macro_f1_mean": 0.5614958598678037,
+    "val_macro_f1_std": 0.06239098193383965,
+    "val_balanced_accuracy_mean": 0.5766003930709813,
+    "val_balanced_accuracy_std": 0.046719174094471315
+}
