@@ -174,3 +174,16 @@ cython_debug/
 .pypirc
 mlruns/
 runs/
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Local raw/processed large data, if created later
+data/raw/
+data/processed/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+{
+    "experiment": "MLP_0_baseline",
+    "image_size": 64,
+    "batch_size": 32,
+    "epochs": 20,
+    "lr": 0.001,
+    "dropout": 0.0,
+    "batch_norm": false,
+    "weight_decay": 0.0,
+    "augmentation": "minimal",
+    "initialization": "default",
+    "early_stopping": false,
+    "val_accuracy_mean": 0.5997571872571873,
+    "val_accuracy_std": 0.029995628234539166,
+    "val_macro_f1_mean": 0.5965545768879119,
+    "val_macro_f1_std": 0.03952341719284363,
+    "val_balanced_accuracy_mean": 0.5987953223247341,
+    "val_balanced_accuracy_std": 0.03637326432205995
+}

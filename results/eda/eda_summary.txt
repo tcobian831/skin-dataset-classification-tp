@@ -1,0 +1,22 @@
+
+EDA summary
+
+Total de imágenes originales analizadas: 878
+Total de imágenes limpias usadas: 844
+Cantidad de clases: 9
+Imágenes duplicadas excluidas: 34
+Grupos de duplicados encontrados: 34
+
+Trainval: 717
+Test fijo: 127
+
+Folds en trainval: [0, 1, 2, 3, 4]
+
+Archivos generados en results/eda:
+- class_distribution_clean.png
+- subset_distribution.png
+- test_class_distribution.png
+- fold_class_distribution.png
+- resolution_scatter.png
+- sample_images_by_class.png
+- image_resolutions.csv
