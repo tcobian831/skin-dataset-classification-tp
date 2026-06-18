@@ -1,0 +1,2 @@
+experiment,fold,best_epoch,val_loss,val_accuracy,val_macro_f1,val_balanced_accuracy,n_train,n_val
+CNN_QUICK_CHECK,0,2,1.4547099669774373,0.4791666666666667,0.39903130891502986,0.4565826330532212,573,144

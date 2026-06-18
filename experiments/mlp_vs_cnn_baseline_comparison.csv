@@ -1,0 +1,3 @@
+model,family,val_accuracy_mean,val_macro_f1_mean,val_balanced_accuracy_mean
+MLP_10_lower_lr_dropout03_bn_wd,MLP,0.6136363636363635,0.5975040079524536,0.6145410145410144
+CNN_0_alexnetsmall_bn_dropout_wd_lightaug,CNN,0.6443181818181818,0.6323044601164605,0.6395928254751785

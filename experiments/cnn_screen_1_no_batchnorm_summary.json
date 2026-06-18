@@ -1,0 +1,26 @@
+{
+  "experiment": "CNN_SCREEN_1_no_batchnorm",
+  "model": "AlexNetSmall",
+  "image_size": 128,
+  "batch_size": 32,
+  "epochs": 15,
+  "lr": 0.0003,
+  "optimizer": "adamw",
+  "dropout": 0.3,
+  "batch_norm": false,
+  "weight_decay": 0.0001,
+  "augmentation": "light",
+  "early_stopping": true,
+  "folds_run": [
+    0
+  ],
+  "best_fold": 0,
+  "num_trainable_params": 2734793,
+  "val_accuracy_mean": 0.4861111111111111,
+  "val_accuracy_std": 0.0,
+  "val_macro_f1_mean": 0.4440088353813844,
+  "val_macro_f1_std": 0.0,
+  "val_balanced_accuracy_mean": 0.4673202614379085,
+  "val_balanced_accuracy_std": 0.0,
+  "mlflow_run_id": "8a97f43af1cb4cc18bcd923539890bae"
+}

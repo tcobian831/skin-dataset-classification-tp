@@ -1,0 +1,4 @@
+experiment,model,dropout,batch_norm,weight_decay,lr,augmentation,val_accuracy_mean,val_accuracy_std,val_macro_f1_mean,val_balanced_accuracy_mean
+CNN_FULL_4_aug_minimal,AlexNetSmall,0.3,True,0.0001,0.0003,minimal,0.6791569541569541,0.02066493421943525,0.6739433067838233,0.6732356532356534
+CNN_0_alexnetsmall_bn_dropout_wd_lightaug,AlexNetSmall,0.3,True,0.0001,0.0003,light,0.6443181818181818,0.021674100328956104,0.6323044601164605,0.6395928254751785
+CNN_FULL_6_weight_decay_1e3,AlexNetSmall,0.3,True,0.001,0.0003,light,0.6373445998445998,0.01405210523809512,0.6193405339808251,0.627522934581758

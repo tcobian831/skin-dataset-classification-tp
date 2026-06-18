@@ -1,0 +1,2 @@
+experiment,fold,best_epoch,val_loss,val_accuracy,val_macro_f1,val_balanced_accuracy,n_train,n_val
+CNN_SCREEN_1_no_batchnorm,0,14,1.4597937133577135,0.4861111111111111,0.4440088353813844,0.4673202614379085,573,144

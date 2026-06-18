@@ -1,0 +1,30 @@
+{
+  "experiment": "CNN_0_alexnetsmall_bn_dropout_wd_lightaug",
+  "model": "AlexNetSmall",
+  "image_size": 128,
+  "batch_size": 32,
+  "epochs": 25,
+  "lr": 0.0003,
+  "optimizer": "adamw",
+  "dropout": 0.3,
+  "batch_norm": true,
+  "weight_decay": 0.0001,
+  "augmentation": "light",
+  "early_stopping": true,
+  "folds_run": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "best_fold": 1,
+  "num_trainable_params": 2736009,
+  "val_accuracy_mean": 0.6443181818181818,
+  "val_accuracy_std": 0.021674100328956104,
+  "val_macro_f1_mean": 0.6323044601164605,
+  "val_macro_f1_std": 0.030985832945893674,
+  "val_balanced_accuracy_mean": 0.6395928254751785,
+  "val_balanced_accuracy_std": 0.027507498229163267,
+  "mlflow_run_id": "6361f2cea28a4c2da9f9f814650cf0df"
+}

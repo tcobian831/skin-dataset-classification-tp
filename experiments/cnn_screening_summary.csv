@@ -1,0 +1,9 @@
+experiment,model,image_size,batch_size,epochs,lr,optimizer,dropout,batch_norm,weight_decay,augmentation,early_stopping,folds_run,best_fold,num_trainable_params,val_accuracy_mean,val_accuracy_std,val_macro_f1_mean,val_macro_f1_std,val_balanced_accuracy_mean,val_balanced_accuracy_std,mlflow_run_id
+CNN_SCREEN_4_aug_minimal,AlexNetSmall,128,32,15,0.0003,adamw,0.3,True,0.0001,minimal,True,[0],0,2736009,0.6666666666666666,0.0,0.6398213125406108,0.0,0.6515151515151515,0.0,a800d3aee2934ea69dc8d51974d10ec2
+CNN_SCREEN_6_weight_decay_1e3,AlexNetSmall,128,32,15,0.0003,adamw,0.3,True,0.001,light,True,[0],0,2736009,0.6388888888888888,0.0,0.595754950773688,0.0,0.6167133520074697,0.0,b22a6e794c9949348bdb36310e930772
+CNN_SCREEN_3_dropout05,AlexNetSmall,128,32,15,0.0003,adamw,0.5,True,0.0001,light,True,[0],0,2736009,0.6180555555555556,0.0,0.5709215250881917,0.0,0.5929038281979458,0.0,68171cc0ba06493596e4efa975c19ab9
+CNN_SCREEN_2_no_dropout,AlexNetSmall,128,32,15,0.0003,adamw,0.0,True,0.0001,light,True,[0],0,2736009,0.6180555555555556,0.0,0.581046165965471,0.0,0.5986333927510398,0.0,9f2c79b1b719424da136fa3a59a6e969
+CNN_SCREEN_8_alexnetmedium,AlexNetMedium,128,32,15,0.0003,adamw,0.3,True,0.0001,light,True,[0],0,6457097,0.6180555555555556,0.0,0.5872937505398365,0.0,0.5972328325269501,0.0,e557a90ffdd841c78612b2b64ee71de2
+CNN_SCREEN_5_aug_medium,AlexNetSmall,128,32,15,0.0003,adamw,0.3,True,0.0001,medium,True,[0],0,2736009,0.6180555555555556,0.0,0.5853230085980528,0.0,0.5978694508106273,0.0,4c1b98a3505846bb984f8d3f46e91dc2
+CNN_SCREEN_7_lr_1e3,AlexNetSmall,128,32,15,0.001,adamw,0.3,True,0.0001,light,True,[0],0,2736009,0.5833333333333334,0.0,0.5377737645117393,0.0,0.573720397249809,0.0,4f5c3c6d23874159baa55a7556a770a7
+CNN_SCREEN_1_no_batchnorm,AlexNetSmall,128,32,15,0.0003,adamw,0.3,False,0.0001,light,True,[0],0,2734793,0.4861111111111111,0.0,0.4440088353813844,0.0,0.4673202614379085,0.0,8a97f43af1cb4cc18bcd923539890bae

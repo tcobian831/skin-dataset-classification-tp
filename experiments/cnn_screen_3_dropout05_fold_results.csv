@@ -1,0 +1,2 @@
+experiment,fold,best_epoch,val_loss,val_accuracy,val_macro_f1,val_balanced_accuracy,n_train,n_val
+CNN_SCREEN_3_dropout05,0,14,1.0934656461079915,0.6180555555555556,0.5709215250881917,0.5929038281979458,573,144

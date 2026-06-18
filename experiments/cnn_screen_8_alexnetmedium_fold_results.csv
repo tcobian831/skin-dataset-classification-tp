@@ -1,0 +1,2 @@
+experiment,fold,best_epoch,val_loss,val_accuracy,val_macro_f1,val_balanced_accuracy,n_train,n_val
+CNN_SCREEN_8_alexnetmedium,0,11,1.1346046262317233,0.6180555555555556,0.5872937505398365,0.5972328325269501,573,144
