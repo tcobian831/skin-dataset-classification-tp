@@ -1,0 +1,34 @@
+{
+  "experiment": "MLP_11_bigger_bn_dropout03",
+  "model": "MLPClassifier",
+  "image_size": 64,
+  "batch_size": 32,
+  "epochs": 30,
+  "lr": 0.0003,
+  "optimizer": "adam",
+  "dropout": 0.3,
+  "batch_norm": true,
+  "weight_decay": 0.0001,
+  "augmentation": "minimal",
+  "initialization": "he",
+  "hidden_dims": [
+    1024,
+    256
+  ],
+  "early_stopping": true,
+  "folds_run": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "best_fold": 1,
+  "val_accuracy_mean": 0.603943278943279,
+  "val_accuracy_std": 0.033740713561438665,
+  "val_macro_f1_mean": 0.592232662965689,
+  "val_macro_f1_std": 0.03425722595930911,
+  "val_balanced_accuracy_mean": 0.6072821296350708,
+  "val_balanced_accuracy_std": 0.03648211960980132,
+  "mlflow_run_id": "076d66bf64744962bd3de74324ad2722"
+}
