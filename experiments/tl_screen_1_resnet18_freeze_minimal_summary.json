@@ -1,0 +1,26 @@
+{
+  "experiment": "TL_SCREEN_1_resnet18_freeze_minimal",
+  "model": "ResNet18_pretrained",
+  "strategy": "freeze",
+  "image_size": 224,
+  "batch_size": 16,
+  "epochs": 8,
+  "lr": 0.0003,
+  "optimizer": "adamw",
+  "dropout": 0.3,
+  "weight_decay": 0.0001,
+  "augmentation": "minimal",
+  "early_stopping": true,
+  "folds_run": [
+    0
+  ],
+  "best_fold": 0,
+  "num_trainable_params": 4617,
+  "val_accuracy_mean": 0.6736111111111112,
+  "val_accuracy_std": 0.0,
+  "val_macro_f1_mean": 0.6680626290920408,
+  "val_macro_f1_std": 0.0,
+  "val_balanced_accuracy_mean": 0.6700195229606994,
+  "val_balanced_accuracy_std": 0.0,
+  "mlflow_run_id": "db0ac71179284701a076930f03a11524"
+}

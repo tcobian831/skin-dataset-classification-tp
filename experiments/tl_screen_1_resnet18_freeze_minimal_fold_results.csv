@@ -1,0 +1,2 @@
+experiment,fold,best_epoch,val_loss,val_accuracy,val_macro_f1,val_balanced_accuracy,n_train,n_val
+TL_SCREEN_1_resnet18_freeze_minimal,0,8,1.1230798959732056,0.6736111111111112,0.6680626290920408,0.6700195229606994,573,144

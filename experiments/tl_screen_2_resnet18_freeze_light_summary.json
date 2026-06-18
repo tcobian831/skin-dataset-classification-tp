@@ -1,0 +1,26 @@
+{
+  "experiment": "TL_SCREEN_2_resnet18_freeze_light",
+  "model": "ResNet18_pretrained",
+  "strategy": "freeze",
+  "image_size": 224,
+  "batch_size": 16,
+  "epochs": 8,
+  "lr": 0.0003,
+  "optimizer": "adamw",
+  "dropout": 0.3,
+  "weight_decay": 0.0001,
+  "augmentation": "light",
+  "early_stopping": true,
+  "folds_run": [
+    0
+  ],
+  "best_fold": 0,
+  "num_trainable_params": 4617,
+  "val_accuracy_mean": 0.6319444444444444,
+  "val_accuracy_std": 0.0,
+  "val_macro_f1_mean": 0.6302350705945478,
+  "val_macro_f1_std": 0.0,
+  "val_balanced_accuracy_mean": 0.6322043969102792,
+  "val_balanced_accuracy_std": 0.0,
+  "mlflow_run_id": "cea2e606da4643c7810783c749fa6a4b"
+}

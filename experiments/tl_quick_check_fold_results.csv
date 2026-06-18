@@ -1,0 +1,2 @@
+experiment,fold,best_epoch,val_loss,val_accuracy,val_macro_f1,val_balanced_accuracy,n_train,n_val
+TL_QUICK_CHECK,0,2,1.8035828140046861,0.375,0.34682032169298727,0.3585434173669468,573,144

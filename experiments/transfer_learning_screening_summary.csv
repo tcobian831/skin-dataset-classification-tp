@@ -1,0 +1,4 @@
+experiment,model,strategy,image_size,batch_size,epochs,lr,optimizer,dropout,weight_decay,augmentation,early_stopping,folds_run,best_fold,num_trainable_params,val_accuracy_mean,val_accuracy_std,val_macro_f1_mean,val_macro_f1_std,val_balanced_accuracy_mean,val_balanced_accuracy_std,mlflow_run_id
+TL_SCREEN_3_resnet18_layer4_minimal,ResNet18_pretrained,fine_tune_last_block,224,16,8,0.0001,adamw,0.3,0.0001,minimal,True,[0],0,8398345,0.8472222222222222,0.0,0.8554614313885414,0.0,0.8562091503267975,0.0,9b93d41bef0b4f7b94972081dedd4a94
+TL_SCREEN_1_resnet18_freeze_minimal,ResNet18_pretrained,freeze,224,16,8,0.0003,adamw,0.3,0.0001,minimal,True,[0],0,4617,0.6736111111111112,0.0,0.6680626290920408,0.0,0.6700195229606994,0.0,db0ac71179284701a076930f03a11524
+TL_SCREEN_2_resnet18_freeze_light,ResNet18_pretrained,freeze,224,16,8,0.0003,adamw,0.3,0.0001,light,True,[0],0,4617,0.6319444444444444,0.0,0.6302350705945478,0.0,0.6322043969102792,0.0,cea2e606da4643c7810783c749fa6a4b

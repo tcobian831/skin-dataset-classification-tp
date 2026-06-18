@@ -1,0 +1,3 @@
+experiment,model,strategy,augmentation,val_accuracy_mean,val_accuracy_std,val_macro_f1_mean,val_balanced_accuracy_mean
+TL_FULL_3_resnet18_layer4_minimal,ResNet18_pretrained,fine_tune_last_block,minimal,0.8298076923076924,0.014804668672962934,0.8371074940553678,0.8374827786592492
+CNN_FULL_4_aug_minimal,AlexNetSmall,trained_from_scratch,minimal,0.6791569541569541,0.0206649342194352,0.6739433067838233,0.6732356532356534

@@ -1,0 +1,2 @@
+experiment,fold,best_epoch,val_loss,val_accuracy,val_macro_f1,val_balanced_accuracy,n_train,n_val
+TL_SCREEN_3_resnet18_layer4_minimal,0,5,0.5772241221533881,0.8472222222222222,0.8554614313885414,0.8562091503267975,573,144
