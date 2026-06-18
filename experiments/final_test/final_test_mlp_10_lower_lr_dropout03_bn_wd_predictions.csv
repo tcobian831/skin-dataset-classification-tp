@@ -1,0 +1,128 @@
+y_true,y_pred,true_class,pred_class
+5,4,Melanoma,Melanocytic nevus
+5,5,Melanoma,Melanoma
+4,5,Melanocytic nevus,Melanoma
+3,8,Dermatofibroma,Vascular lesion
+3,0,Dermatofibroma,Actinic keratosis
+0,6,Actinic keratosis,Squamous cell carcinoma
+0,0,Actinic keratosis,Actinic keratosis
+8,8,Vascular lesion,Vascular lesion
+1,7,Atopic Dermatitis,Tinea Ringworm Candidiasis
+0,6,Actinic keratosis,Squamous cell carcinoma
+8,8,Vascular lesion,Vascular lesion
+3,6,Dermatofibroma,Squamous cell carcinoma
+5,5,Melanoma,Melanoma
+3,0,Dermatofibroma,Actinic keratosis
+6,8,Squamous cell carcinoma,Vascular lesion
+1,7,Atopic Dermatitis,Tinea Ringworm Candidiasis
+4,4,Melanocytic nevus,Melanocytic nevus
+8,8,Vascular lesion,Vascular lesion
+0,6,Actinic keratosis,Squamous cell carcinoma
+7,5,Tinea Ringworm Candidiasis,Melanoma
+7,6,Tinea Ringworm Candidiasis,Squamous cell carcinoma
+3,3,Dermatofibroma,Dermatofibroma
+3,0,Dermatofibroma,Actinic keratosis
+1,5,Atopic Dermatitis,Melanoma
+4,4,Melanocytic nevus,Melanocytic nevus
+4,4,Melanocytic nevus,Melanocytic nevus
+1,1,Atopic Dermatitis,Atopic Dermatitis
+0,1,Actinic keratosis,Atopic Dermatitis
+1,1,Atopic Dermatitis,Atopic Dermatitis
+6,0,Squamous cell carcinoma,Actinic keratosis
+5,5,Melanoma,Melanoma
+3,1,Dermatofibroma,Atopic Dermatitis
+0,0,Actinic keratosis,Actinic keratosis
+7,7,Tinea Ringworm Candidiasis,Tinea Ringworm Candidiasis
+3,0,Dermatofibroma,Actinic keratosis
+3,6,Dermatofibroma,Squamous cell carcinoma
+8,8,Vascular lesion,Vascular lesion
+5,4,Melanoma,Melanocytic nevus
+4,6,Melanocytic nevus,Squamous cell carcinoma
+6,6,Squamous cell carcinoma,Squamous cell carcinoma
+6,6,Squamous cell carcinoma,Squamous cell carcinoma
+2,2,Benign keratosis,Benign keratosis
+1,1,Atopic Dermatitis,Atopic Dermatitis
+2,2,Benign keratosis,Benign keratosis
+6,6,Squamous cell carcinoma,Squamous cell carcinoma
+5,8,Melanoma,Vascular lesion
+1,7,Atopic Dermatitis,Tinea Ringworm Candidiasis
+5,1,Melanoma,Atopic Dermatitis
+6,6,Squamous cell carcinoma,Squamous cell carcinoma
+3,0,Dermatofibroma,Actinic keratosis
+3,3,Dermatofibroma,Dermatofibroma
+4,4,Melanocytic nevus,Melanocytic nevus
+5,5,Melanoma,Melanoma
+5,1,Melanoma,Atopic Dermatitis
+0,6,Actinic keratosis,Squamous cell carcinoma
+2,2,Benign keratosis,Benign keratosis
+5,4,Melanoma,Melanocytic nevus
+0,6,Actinic keratosis,Squamous cell carcinoma
+0,7,Actinic keratosis,Tinea Ringworm Candidiasis
+2,2,Benign keratosis,Benign keratosis
+8,8,Vascular lesion,Vascular lesion
+8,8,Vascular lesion,Vascular lesion
+2,2,Benign keratosis,Benign keratosis
+2,2,Benign keratosis,Benign keratosis
+8,8,Vascular lesion,Vascular lesion
+2,2,Benign keratosis,Benign keratosis
+0,6,Actinic keratosis,Squamous cell carcinoma
+8,8,Vascular lesion,Vascular lesion
+1,1,Atopic Dermatitis,Atopic Dermatitis
+2,2,Benign keratosis,Benign keratosis
+6,0,Squamous cell carcinoma,Actinic keratosis
+7,7,Tinea Ringworm Candidiasis,Tinea Ringworm Candidiasis
+8,8,Vascular lesion,Vascular lesion
+0,8,Actinic keratosis,Vascular lesion
+7,7,Tinea Ringworm Candidiasis,Tinea Ringworm Candidiasis
+8,8,Vascular lesion,Vascular lesion
+1,1,Atopic Dermatitis,Atopic Dermatitis
+4,4,Melanocytic nevus,Melanocytic nevus
+2,2,Benign keratosis,Benign keratosis
+3,1,Dermatofibroma,Atopic Dermatitis
+7,7,Tinea Ringworm Candidiasis,Tinea Ringworm Candidiasis
+0,6,Actinic keratosis,Squamous cell carcinoma
+2,1,Benign keratosis,Atopic Dermatitis
+7,1,Tinea Ringworm Candidiasis,Atopic Dermatitis
+5,4,Melanoma,Melanocytic nevus
+8,8,Vascular lesion,Vascular lesion
+6,6,Squamous cell carcinoma,Squamous cell carcinoma
+5,5,Melanoma,Melanoma
+1,1,Atopic Dermatitis,Atopic Dermatitis
+8,8,Vascular lesion,Vascular lesion
+0,6,Actinic keratosis,Squamous cell carcinoma
+2,2,Benign keratosis,Benign keratosis
+7,7,Tinea Ringworm Candidiasis,Tinea Ringworm Candidiasis
+6,6,Squamous cell carcinoma,Squamous cell carcinoma
+6,8,Squamous cell carcinoma,Vascular lesion
+7,7,Tinea Ringworm Candidiasis,Tinea Ringworm Candidiasis
+3,3,Dermatofibroma,Dermatofibroma
+4,4,Melanocytic nevus,Melanocytic nevus
+4,4,Melanocytic nevus,Melanocytic nevus
+6,6,Squamous cell carcinoma,Squamous cell carcinoma
+4,4,Melanocytic nevus,Melanocytic nevus
+6,0,Squamous cell carcinoma,Actinic keratosis
+3,6,Dermatofibroma,Squamous cell carcinoma
+8,8,Vascular lesion,Vascular lesion
+5,4,Melanoma,Melanocytic nevus
+7,1,Tinea Ringworm Candidiasis,Atopic Dermatitis
+4,4,Melanocytic nevus,Melanocytic nevus
+2,2,Benign keratosis,Benign keratosis
+5,3,Melanoma,Dermatofibroma
+8,8,Vascular lesion,Vascular lesion
+4,4,Melanocytic nevus,Melanocytic nevus
+2,2,Benign keratosis,Benign keratosis
+4,4,Melanocytic nevus,Melanocytic nevus
+1,1,Atopic Dermatitis,Atopic Dermatitis
+6,6,Squamous cell carcinoma,Squamous cell carcinoma
+3,6,Dermatofibroma,Squamous cell carcinoma
+8,8,Vascular lesion,Vascular lesion
+4,4,Melanocytic nevus,Melanocytic nevus
+2,2,Benign keratosis,Benign keratosis
+5,5,Melanoma,Melanoma
+6,4,Squamous cell carcinoma,Melanocytic nevus
+6,6,Squamous cell carcinoma,Squamous cell carcinoma
+4,4,Melanocytic nevus,Melanocytic nevus
+0,0,Actinic keratosis,Actinic keratosis
+0,1,Actinic keratosis,Atopic Dermatitis
+1,1,Atopic Dermatitis,Atopic Dermatitis
+2,6,Benign keratosis,Squamous cell carcinoma

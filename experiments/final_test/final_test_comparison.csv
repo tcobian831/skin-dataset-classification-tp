@@ -1,0 +1,4 @@
+experiment,model_family,model,strategy,epochs,test_accuracy,test_macro_f1,test_balanced_accuracy,test_loss,n_trainval,n_test,num_trainable_params
+FINAL_TEST_TL_FULL_3_resnet18_layer4_minimal,TL,ResNet18_pretrained,fine_tune_last_block,6,0.8582677165354331,0.8634570626506111,0.8666666666666667,0.39694973075483725,717,127,8398345
+FINAL_TEST_CNN_FULL_4_aug_minimal,CNN,AlexNetSmall,,18,0.6929133858267716,0.6874716554432578,0.6870370370370371,0.9050998218416229,717,127,2736009
+FINAL_TEST_MLP_10_lower_lr_dropout03_bn_wd,MLP,MLPClassifier,,11,0.5984251968503937,0.5789157191100182,0.6000000000000001,1.1145758098504674,717,127,6360073
