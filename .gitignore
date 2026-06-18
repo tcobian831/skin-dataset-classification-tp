@@ -189,3 +189,5 @@ data/processed/
 Thumbs.db
 
 backup_parte1_sin_mlflow/
+
+*.zip
