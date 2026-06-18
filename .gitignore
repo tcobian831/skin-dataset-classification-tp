@@ -187,3 +187,5 @@ data/processed/
 # OS files
 .DS_Store
 Thumbs.db
+
+backup_parte1_sin_mlflow/
